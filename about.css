@@ -1,0 +1,259 @@
+/*
+    FONTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@0,600;1,100&display=swap');
+
+:root {
+    --white-color: #e6e6e6;
+    --dark-brown: #532e1c;
+    --light-brown: #c5a880;
+    --black: #0f0f0f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Didact Gothic';
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px;
+
+    position: relative;
+}
+
+/*
+    NAVIGATION
+*/
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 43px 75px;
+    gap: 8px;
+
+    position: absolute;
+    width: 1369px;
+    height: 110px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 63px;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+/*
+    HEADER
+*/
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 153px 75px;
+
+    position: absolute;
+    height: 503px;
+    width: 1369px;
+    left: 0px;
+    top: 0px;
+
+    background: url(/images/Image.png);
+    background-size: contain;
+}
+
+header > p {
+    font-family: 'Century Gothic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    margin: 0px;
+
+    color: #FFFFFF;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 144px;
+    text-align: center;
+    letter-spacing: -0.1em;
+    margin: 0px;
+
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.1em;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0px;
+}
+
+/* 
+    MAIN CONTENT
+*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 120px;
+
+    position: absolute;
+    width: 1287px;
+    height: 2468px;
+    left: 113px;
+    top: 878px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 63px;
+
+    width: 1287px;
+    height: 610px;
+}
+
+.card-content-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card--version-reversed {
+    flex-direction: row-reverse;
+}
+
+.card-content-title--version-reversed {
+    flex-direction: row-reverse;
+}
+
+p.reversed {
+    text-align: right;
+}
+
+article > p {
+    font-family: 'Century Gothic';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+
+/*
+    FOOTER
+*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    position: absolute;
+    height: 741px;
+    left: 0px;
+    right: 0px;
+    top: 3500px;
+
+    background: #000000;
+}
+
+footer > .tagline {
+    width: 939px;
+
+    text-align: center;
+    color: white;
+}
+
+hr {
+    width: 1300px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 102px;
+
+    width: 1104px;
+    height: 315px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    width: 300px;
+    height: 315px;
+}
+
+.footer-links > h3, .footer-links a, .footer-links p {
+    margin: 0px;
+    color: white;
+}
+
+.footer-links > hr {
+    width: 300px;
+}
+
+ul.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
