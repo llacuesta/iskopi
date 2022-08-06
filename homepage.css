@@ -1,354 +1,350 @@
 
 :root{
-    --white-color: #e6e6e6;
-    --dark-brown: #532e1c;
-    --light-brown: #c5a880;
-    --black: #0f0f0f;
- 
- }
- /*defaults*/
- html {
-     display: block;
-     margin: 0px;
- 
-     scroll-behavior: smooth;
- }
- 
- body {
-     margin:0px;
-     font-family: 'Didact Gothic'; /*updated*/
- }
- 
- /* nav section */
- nav{
-     display: flex;
-     justify-content:space-between;
-     width: auto;
-     height: 80px;
-     margin: 0px;
- 
-     background:var(--white-color);
- }
- 
- .logo--homepage{
-     display:flex;
-     align-items: center;
- }
- 
- #iskopi__logo{
-     width: 70px;
-     height: 57px;
- 
-     margin-left: 55px;
- }
- 
- #iskopi__text{
-     width: 110px;
-     height: 35px;
- 
-     margin-top: 10px;
-     margin-left: 10px;
- }
- 
- .nav__button{
-     width: 500px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
- 
-     margin-right: 61px;
-     
-     list-style: none;
-     
- }
- 
- .nav__button>li>a{
-     text-decoration: none;
-     color: var(--black);
-     font-family: "Didact Gothic";
- }
- 
- /* header section */
- header{
-     margin: 0px;
-     height: 670px; /*updated*/
-     background-image: url("coffee header.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     
- }
- 
- .header{
-     display: flex;
-     flex-direction: column;
-     align-content: flex-start;
- 
-     width: 600px;
-     margin-left: 775px;
- 
- }
- 
- .header__tagline{
-     font-size: 90px;
-     color: var(--white-color);
-     line-height: 90px;
- 
-     
-     margin-top: 150px; /*updated*/
-     /* font:; */
- }
- 
- .header__button{
-     display: flex;
- 
-     width: 375px;
-     height: 46px;
-     column-gap: 10px;
- 
-     justify-content: center;
-     align-items: center;
-     font-family: "Didact Gothic";
- }
- 
- .header__button--signup, #readmore{
-     font-family: "Didact Gothic";
-     font-size: 16px;
-     color: var(--white-color);
-     background-color: var(--black);
- 
-     /* border:; */
- 
- }
- 
- .header__button--ordernow{
-     font-size: 16px;
-     color:var(--black);
-     background-color: var(--light-brown);
- 
-     /* border:; */
- }
- 
- /* product section */
- .product__header {
-     display: flex;
-     flex-direction: column;
- 
-     justify-content: center;
-     align-items: center;
-     align-content: center;
- 
-     margin-top: 60px; /*updated*/
- }
- 
- .prod__line, .aboutus__line{
-     border: 1px solid #532E1C;
-     height: 1px;
-     background-color: var(--dark-brown);
- }
- 
- .prod__line{
-     width: 380px;
- }
- 
- 
- .product__title,.about-content-title{
-     margin: 0px;
-     font-size: 48px;
-     /* font:; */
- }
- 
- h1>span{
-     color: var(--light-brown)
-     /* font:; */
- }
- 
- .product__subtitle{
-     font-size: 15px;
-     font-family: "Didact Gothic";
-     text-align: center;
-     text-justify: inter-word;
- 
-     margin: 0px;
-     padding: 5px;
-     width: 300px;
- }
- 
- /*product categories*/
- 
- .category{
-     display: flex;
-     justify-content: center;
-     column-gap: 50px;
-     padding: 50px;
-     margin: 0px;
- 
-     position:relative;
- }
- 
- .product__category {
-     width: 250px; /*updated*/
-     height: 490px; /*updated*/
- 
-     margin: 0px;
- }
- 
- .product__category--coffeebeans{
-     background-image: url("coffee\ beans.jpg");
-     background-size: cover;
- }
- 
- .product__category--coffee{
-     background-image: url("coffee.jpg");
-     background-size: contain;
- }
- 
- .product__category--pastries{
-     background-image: url("pastries.jpg");
-     background-size: contain;
-     background-repeat: no-repeat;
- }
- 
- .product__gradient{
-     width: 250px; /*updated*/
-     height: 490px; /*updated*/
-     background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 0) 32.29%, #0F0F0F 66.15%, #0F0F0F 100%);
- 
- }
- 
- .category__text{
-     margin-top: 320px; /*updated*/
-     position: absolute;
- 
-     width: 250px; /*updated*/
-     padding:20px;
- 
- 
- }
- .category__title{
-     color: var(--white-color);
-     font-size: 24px;
-     font-family: "Didact Gothic";
- 
-     margin: 0px;
- }
- 
- .category__subtitle{
-     color: var(--white-color);
-     font-family: "Didact Gothic"; 
- 
-     margin: 0px;
-     padding-top: 5px;
-     
- }
- /*about us section*/
- 
- .aboutus{
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: center;
-     padding: 0px;
-     gap: 63px;
- 
-     width: 1287px;
-     height: 610px;
- 
- }
- 
- section{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- 
- #readmore{
-     width: 182.5px;
-     height: 46px;
- }
- .about-content{
-     display: flex;
-     flex-direction: column;
-     text-align: justify;
- 
-     width: 460px;
-     height: auto;
- 
- }
- 
- .aboutus__line{
-     width: 450px;
- }
- 
- /*footer section*/
- 
- footer{
-     background-color: var(--black);
-     color: var(--white-color);
-     font-family: "Didact Gothic";
- 
-     height: 800px;
- }
- 
- .footer__header{
-     display: flex;
-     flex-direction: column;
- 
-     justify-content: center;
-     align-items: center;
- 
- }
- 
- #footerlogo{
-     width: 200px;
-     height: 58px;
- 
-     margin-top: 80px;
- }
- 
- .footer__header>p{
-     
-     font-size: 16px;
-     text-align: center;
-     width: 670px;
-     height: 80px;
- }
- 
- .sections{
-     display: flex;
-     justify-content:center;
-     column-gap: 150px;  
- 
-     margin-top: 50px;
-     
- }
- 
- .section__line{
-     width: 297px;
-     height: 1px;
-     background-color: var(--white-color);
- 
-     margin-top: 10px;
-     margin-bottom: 10px;
- }
- 
- hr{
-     margin-right: 20px;
-     margin-left: 20px;
- }
- 
- .section__content{
-     display: flex;
-     flex-direction: column;
- 
-     row-gap: 10px;
- }
- 
- .section__content>p{
-     margin: 0px;
- }
- 
- .section__content--contact{
-     row-gap: 20px;
-     width: 180px;
- }
- 
+--white-color: #e6e6e6;
+--dark-brown: #532e1c;
+--light-brown: #c5a880;
+--black: #0f0f0f;
+
+}
+/*defaults*/
+html {
+    display: block;
+    margin: 0px;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0px;
+    font-family: 'Didact Gothic'; /*updated*/
+}
+
+/* nav section */
+nav{
+    display: flex;
+    justify-content:space-between;
+    width: auto;
+    height: 80px;
+    margin: 0px;
+
+    background:var(--white-color);
+}
+
+.logo--homepage{
+    display:flex;
+    align-items: center;
+}
+
+#iskopi__logo{
+    width: 70px;
+    height: 57px;
+
+    margin-left: 55px;
+}
+
+#iskopi__text{
+    width: 110px;
+    height: 35px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav__button{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-right: 61px;
+    
+    list-style: none;
+    
+}
+
+.nav__button>li>a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: "Didact Gothic";
+}
+
+/* header section */
+header{
+    margin: 0px;
+    height: 670px; /*updated*/
+    background-image: url("homepage-images/coffee header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+    width: 600px;
+    margin-left: 775px;
+
+}
+
+.header__tagline{
+    font-size: 90px;
+    color: var(--white-color);
+    line-height: 90px;
+
+    
+    margin-top: 150px; /*updated*/
+    /* font:; */
+}
+
+.header__button{
+    display: flex;
+
+    width: 375px;
+    height: 46px;
+    column-gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+    font-family: "Didact Gothic";
+}
+
+.header__button--signup, #readmore{
+    font-family: "Didact Gothic";
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--black);
+
+    /* border:; */
+
+}
+
+.header__button--ordernow{
+    font-size: 16px;
+    color:var(--black);
+    background-color: var(--light-brown);
+
+    /* border:; */
+}
+
+/* product section */
+.product__header {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin-top: 60px; /*updated*/
+}
+
+.prod__line, .aboutus__line{
+    border: 1px solid #532E1C;
+    height: 1px;
+    background-color: var(--dark-brown);
+}
+
+.prod__line{
+    width: 380px;
+}
+
+
+.product__title,.about-content-title{
+    margin: 0px;
+    font-size: 48px;
+    /* font:; */
+}
+
+h1>span{
+    color: var(--light-brown)
+    /* font:; */
+}
+
+.product__subtitle{
+    font-size: 15px;
+    font-family: "Didact Gothic";
+    text-align: center;
+    text-justify: inter-word;
+
+    margin: 0px;
+    padding: 5px;
+    width: 300px;
+}
+
+/*product categories*/
+
+.category{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    padding: 50px;
+    margin: 0px;
+
+    position:relative;
+}
+
+.product__category {
+    width: 250px; /*updated*/
+    height: 490px; /*updated*/
+
+    margin: 0px;
+}
+
+.product__category--coffeebeans{
+    background-image: url("homepage-images/coffee\ beans.jpg");
+    background-size: cover;
+}
+
+.product__category--coffee{
+    background-image: url("homepage-images/coffee.jpg");
+    background-size: contain;
+}
+
+.product__category--pastries{
+    background-image: url("homepage-images/pastries.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.product__gradient{
+    width: 250px; /*updated*/
+    height: 490px; /*updated*/
+    background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 0) 32.29%, #0F0F0F 66.15%, #0F0F0F 100%);
+
+}
+
+.category__text{
+    margin-top: 320px; /*updated*/
+    position: absolute;
+
+    width: 250px; /*updated*/
+    padding:20px;
+
+
+}
+.category__title{
+    color: var(--white-color);
+    font-size: 24px;
+
+    margin: 0px;
+}
+
+.category__subtitle{
+    color: var(--white-color);
+
+    margin: 0px;
+    padding-top: 5px;
+    
+}
+/*about us section*/
+
+.aboutus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 63px;
+
+    width: 1287px;
+    height: 610px;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#readmore{
+    width: 182.5px;
+    height: 46px;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    width: 460px;
+    height: auto;
+
+}
+
+.aboutus__line{
+    width: 450px;
+}
+
+/*footer section*/
+
+footer{
+    background-color: var(--black);
+    color: var(--white-color);
+
+    height: 800px;
+}
+
+.footer__header{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#footerlogo{
+    width: 200px;
+    height: 58px;
+
+    margin-top: 80px;
+}
+
+.footer__header>p{
+    
+    font-size: 16px;
+    text-align: center;
+    width: 670px;
+    height: 80px;
+}
+
+.sections{
+    display: flex;
+    justify-content:center;
+    column-gap: 150px;  
+
+    margin-top: 50px;
+    
+}
+
+.section__line{
+    width: 297px;
+    height: 1px;
+    background-color: var(--white-color);
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.section__content{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 10px;
+}
+
+.section__content>p{
+    margin: 0px;
+}
+
+.section__content--contact{
+    row-gap: 20px;
+    width: 180px;
+}
