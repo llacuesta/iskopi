@@ -28,23 +28,22 @@ body {
 */
 nav {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 43px 75px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 75px;
     gap: 8px;
 
     position: absolute;
     width: 1369px;
-    height: 110px;
+    z-index: 1;
     left: 0px;
     top: 0px;
-    z-index: 1;
 }
 
 ul {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     gap: 63px;
 
@@ -58,13 +57,27 @@ a {
     color: var(--white-color);
 }
 
+.logo--homepage {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+#iskopi-logo {
+    width: 80px;
+}
+
+#iskopi-text-logo {
+    width: 120px;
+}
+
 /*
     HEADER
 */
 header {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 153px 75px;
 
     position: absolute;
@@ -93,7 +106,11 @@ header > p {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 10px;
+    gap: 15px;
+}
+
+.header-title > h1:last-child {
+    color: var(--light-brown)
 }
 
 h1 {
@@ -164,12 +181,16 @@ main {
     gap: 10px;
 }
 
+.card-content-title > h2:last-child {
+    color: var(--dark-brown);
+}
+
 .card--version-reversed {
     flex-direction: row-reverse;
 }
 
 .card-content-title--version-reversed {
-    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 p.reversed {
