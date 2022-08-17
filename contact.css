@@ -1,0 +1,25 @@
+/*
+    FONTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@0,600;1,100&display=swap');
+
+:root {
+    --white-color: #e6e6e6;
+    --dark-brown: #532e1c;
+    --light-brown: #c5a880;
+    --black: #0f0f0f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Didact Gothic';
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px;
+
+    position: relative;
+}
+
