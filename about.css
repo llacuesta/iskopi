@@ -17,10 +17,14 @@ html {
 body {
     font-family: 'Didact Gothic';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0px;
 
     position: relative;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /*
@@ -30,13 +34,13 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 75px;
+    padding: 20px 55px;
     gap: 8px;
 
     position: absolute;
-    width: 1369px;
     z-index: 1;
     left: 0px;
+    right: 0px;
     top: 0px;
 }
 
@@ -64,11 +68,11 @@ a {
 }
 
 #iskopi-logo {
-    width: 80px;
+    width: 70px;
 }
 
 #iskopi-text-logo {
-    width: 120px;
+    width: 110px;
 }
 
 /*
@@ -82,19 +86,20 @@ header {
 
     position: absolute;
     height: 503px;
-    width: 1369px;
+    right: 0px;
     left: 0px;
     top: 0px;
 
-    background: url(/images/Image.png);
-    background-size: contain;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #FFFFFF 100%), url(/images/header-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header > p {
     font-family: 'Century Gothic';
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     letter-spacing: -0.05em;
     margin: 0px;
@@ -157,9 +162,10 @@ main {
     gap: 120px;
 
     position: absolute;
+    margin: auto;
     width: 1287px;
-    height: 2468px;
-    left: 113px;
+    right: 0px;
+    left: 0px;
     top: 878px;
 }
 
