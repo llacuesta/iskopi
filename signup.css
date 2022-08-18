@@ -1,0 +1,111 @@
+:root{
+    --white-color: #e6e6e6;
+    --dark-brown: #532e1c;
+    --light-brown: #c5a880;
+    --black: #0f0f0f;
+ 
+ }
+
+/*defaults*/
+html {
+    display: block;
+    margin: 0px;
+}
+
+body {
+    margin:0px;
+    background-color: var(--white-color);
+    font-family: 'Didact Gothic';
+    font-size: 18px;
+
+    background-color: var(--light-brown);
+
+
+}
+
+img{
+    position: absolute;
+    z-index: -1;
+    background-size:contain;
+
+    height: 100vh;
+    width: 100%;
+
+    opacity: 0.4;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signup-left,.signup-right{
+    width: 450px;
+    height: 552px;
+}
+.signup-right{
+    width: 450px;
+    height: 512px;
+}
+
+.signup-left{
+    background-image: url("signup.jpg");
+}
+.signup-right{
+    background-color: var(--white-color);
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    row-gap: 10px;
+}
+
+input{
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    border-width: 2px;
+    border-color: var(--light-brown);
+ 
+}
+
+label{
+    color: var(--dark-brown);
+}
+#back-button{
+    width: 100px;
+    transition: transform 500ms ease-in-out 25ms;
+}
+#back-button:hover {
+    transform: translateX(-8px);
+    color: var(--light-brown);
+}
+
+#signup-page-button{
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--black);
+
+    height: 40px;
+    margin-top: 10px;
+
+    transition: transform 500ms ease-in-out 25ms;
+}
+
+#signup-page-button:hover {
+    color: var(--black);
+    background-color: rgba(230,230,230,0.5);
+}
