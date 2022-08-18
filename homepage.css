@@ -16,6 +16,7 @@
  
  body {
      margin:0px;
+     background-color: var(--white-color);
      font-family: 'Didact Gothic'; /*updated*/
  }
  
@@ -66,6 +67,7 @@
      text-decoration: none;
      color: var(--black);
      font-family: "Didact Gothic";
+     font-size: 16px;
  }
  .nav__button>li>a:hover{
      text-decoration:underline;
@@ -139,6 +141,9 @@
      
  }
  /* product section */
+ .product__section{
+     margin-bottom: 40px;
+ }
  .product__header {
      display: flex;
      flex-direction: column;
@@ -157,13 +162,13 @@
  }
  
  .prod__line{
-     width: 380px;
+     width: 480px;
  }
  
  
  .product__title,.about-content-title{
      margin: 0px;
-     font-size: 48px;
+     font-size: 64px;
      font-family: 'Poppins';
  
  }
@@ -174,7 +179,7 @@
  }
  
  .product__subtitle{
-     font-size: 15px;
+     font-size: 18px;
      font-family: "Didact Gothic";
      text-align: center;
      text-justify: inter-word;
@@ -207,30 +212,41 @@
      transform: translateY(20px);
      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
-     
  
  }
- .product__category--coffeebeans{
-     background-image: url("homepage-images/coffee\ beans.jpg");
-     background-size: cover;
+ .product__category:hover >.product__gradient>.category__text{
+     color: var(--light-brown);
+ }
+ .product__category:hover >.product__gradient>.category__text>.category__button{
+     color: var(--light-brown);
  }
  
- .product__category--coffee{
-     background-image: url("homepage-images/coffee.jpg");
-     background-size: contain;
+ /*carousel */
+ 
+ .coffee-img,.pastries-img,.coffeebeans-img{
+     max-width: 100%;
+     max-height: 100%;
+     display: block;
  }
  
- .product__category--pastries{
-     background-image: url("homepage-images/pastries.jpg");
-     background-size: contain;
-     background-repeat: no-repeat;
+ .fade{
+     animation-name: fade;
+     animation-duration: 2s;
+ 
+ }
+ @keyframes fade {
+     from {opacity: .4} 
+     to {opacity: 1}
  }
  
+ /*inner category*/
  .product__gradient{
-     width: 250px; /*updated*/
-     height: 490px; /*updated*/
+     width: 250px; 
+     height: 490px; 
      background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 0) 32.29%, #0F0F0F 66.15%, #0F0F0F 100%);
  
+     position: absolute;
+     z-index: 1;
  }
  
  .category__text{
@@ -252,7 +268,7 @@
  
  .category__subtitle{
      font-family: "Didact Gothic"; 
- 
+     font-size: 18px;
      margin: 0px;
      padding-top: 5px;
      
@@ -263,7 +279,7 @@
      margin-left: 60px;
      margin-top: 20px;
  
-     color: var(--light-brown);
+     color: var(--white-color);
  }
  /*about us section*/
  
@@ -281,9 +297,15 @@
  }
  
  section{
+     height: 747px;
+ 
      display: flex;
      flex-direction: column;
      align-items: center;
+     justify-content: center;
+     
+     background: linear-gradient(91.19deg, #532E1C 22.03%, #E6E6E6 48.34%);
+ 
  }
  
  #readmore{
@@ -301,18 +323,36 @@
  
  }
  
+ .aboutus-text{
+     font-size: 18px;
+ }
+ 
  .aboutus__line{
      width: 450px;
  }
+ /* #rectangle{
+     height: 747px;
+     min-width: 400px;
+     background-color: var(--dark-brown);
+     position: absolute;
+     z-index: -1;
+ 
+     margin: 0px;
+     
+ 
+ } */
+ 
  
  /*footer section*/
  
  footer{
      background-color: var(--black);
      color: var(--white-color);
-     font-family: "Didact Gothic";
  
-     height: 725px;
+     font-family: "Didact Gothic";
+     font-size: 18px;
+ 
+     height: 740px;
  
  }
  
@@ -333,8 +373,6 @@
  }
  
  .footer__header>p{
-     
-     font-size: 16px;
      text-align: center;
      width: 670px;
      height: 80px;
@@ -383,9 +421,11 @@
      color: var(--white-color);
      display: flex;
      justify-content: space-between;
-     padding: 20px;
+     padding: 10px;
      
      margin-top: 100px;
+     margin-left: 10px;
+     margin-right: 10px;
  }
  
  .copyrightsec>p{
