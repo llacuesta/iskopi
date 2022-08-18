@@ -21,5 +21,157 @@ body {
     margin: 0px;
 
     position: relative;
+    background-image: url(images/bg.png);
+    background-size: cover;
 }
 
+/* 
+    MAIN
+*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+/*
+    CONTACT US
+*/
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+
+    background-color: var(--white-color);
+}
+
+.back {
+    margin: 25px;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*
+    INFORMATION
+*/
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+}
+
+.top {
+    height: 200px;
+    padding: 50px;
+
+    background-color: var(--dark-brown);
+}
+
+.bot {
+    height: 200px;
+    padding: 50px;
+
+    background-color: var(--light-brown);
+}
+
+.information h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -0.05em;
+
+    margin: 0px;
+}
+
+.headline {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.headline > h1:first-child {
+    color: var(--white-color)
+}
+
+.content > p {
+    color: white;
+    margin: 0px;
+}
+
+/*
+    FORM
+*/
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 65px;
+    margin-top: 10px;
+}
+
+label {
+    color: var(--dark-brown);
+    padding-bottom: 10px;
+}
+
+input, textarea, button {
+    font-family: 'Didact Gothic';
+    font-weight: 400;
+    
+    border-radius: 0px;
+    border: 1px solid var(--light-brown);
+    background-color: #cfcfcf;
+}
+
+input {
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+    font-size: 14px;
+}
+
+button {
+    height: 35px;
+
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--black);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-radius: 0px;
+    border: 1px solid var(--black);
+    background-color: #cfcfcf;
+}
+
+button:hover {
+    background-color: var(--white-color);
+    color: var(--black);
+}
+
+button:active {
+    background-color: var(--light-brown);
+    color: var(--black);
+    border-color: var(--black);
+}
