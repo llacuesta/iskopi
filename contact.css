@@ -32,7 +32,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*
@@ -41,23 +45,28 @@ main {
 .contact-us {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 600px;
+    width: 470px;
+    height: 552px;
 
     background-color: var(--white-color);
 }
 
 .back {
-    margin: 25px;
+    margin: 20px;
+    transition: transform 500ms ease-in-out 25ms;
+}
+
+.back:hover {
+    transform: translateX(-8px);
 }
 
 a {
     color: var(--black);
     text-decoration: none;
+    
 }
-
 a:hover {
-    text-decoration: underline;
+    color: var(--light-brown);
 }
 
 /*
@@ -66,19 +75,19 @@ a:hover {
 .information {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 600px;
+    width: 470px;
+    height: 552px;
 }
 
 .top {
-    height: 200px;
+    height: 185px;
     padding: 50px;
 
     background-color: var(--dark-brown);
 }
 
 .bot {
-    height: 200px;
+    height: 185px;
     padding: 50px;
 
     background-color: var(--light-brown);
@@ -90,6 +99,8 @@ a:hover {
     font-weight: 600;
     font-size: 48px;
     letter-spacing: -0.05em;
+    line-height: 50px;
+    color: var(--white-color);
 
     margin: 0px;
 }
@@ -100,13 +111,21 @@ a:hover {
     column-gap: 15px;
 }
 
-.headline > h1:first-child {
-    color: var(--white-color)
+.top h1:last-child {
+    color: var(--light-brown)
+}
+
+.bot h1:first-child {
+    color: var(--dark-brown)
 }
 
 .content > p {
     color: white;
     margin: 0px;
+}
+
+.bot p {
+    color: black;
 }
 
 /*
@@ -115,7 +134,7 @@ a:hover {
 form {
     display: flex;
     flex-direction: column;
-    margin: 65px;
+    margin: 50px;
     margin-top: 10px;
 }
 
@@ -144,14 +163,14 @@ input {
 textarea {
     resize: none;
     height: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 10px;
 
     font-size: 14px;
 }
 
 button {
-    height: 35px;
+    height: 40px;
 
     font-size: 16px;
     color: var(--white-color);
