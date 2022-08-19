@@ -161,7 +161,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    gap: 120px;
+    gap: 110px;
 
     position: absolute;
     margin: auto;
@@ -205,6 +205,17 @@ p.reversed {
     text-align: right;
 }
 
+
+/*
+    DEVELOPER CONTACT
+*/
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
 article > p {
     font-family: 'Century Gothic';
     font-style: italic;
@@ -212,6 +223,76 @@ article > p {
     line-height: 29px;
     letter-spacing: -0.05em;
     text-align: center;
+}
+
+article span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: -0.05em;
+    margin-right: 5px;
+
+    color: var(--dark-brown);
+}
+
+.about-devs {
+    display: flex;
+    width: 1000px;
+    text-align: center;
+}
+
+.about-devs > p {
+    margin: 0px;
+}
+
+.developers {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.dev-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    gap: 40px
+}
+
+.dev-card > img {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    filter: drop-shadow(5px 5px 1rem rgba(83, 46, 28, 0.49));
+}
+
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dev-name, .dev-description {
+    text-align: center;
+}
+
+.dev-name {
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--dark-brown);
+}
+
+.dev-description {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.dev-socials {
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
 }
 
 /*
@@ -228,7 +309,7 @@ footer {
     height: 740px;
     left: 0px;
     right: 0px;
-    top: 3489px;
+    top: 3800px;
 
     background: var(--black);
 }
