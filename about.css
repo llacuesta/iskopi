@@ -34,7 +34,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 55px;
+    padding: 12px 86px 12px 55px;
     gap: 8px;
 
     position: absolute;
@@ -49,7 +49,8 @@ ul {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 63px;
+    gap: 50px;
+    font-size: 16px;
 
     list-style-type: none;
     margin: 0;
@@ -64,7 +65,7 @@ a {
 .logo--homepage {
     display: flex;
     align-items: center;
-    gap: 30px
+    gap: 10px
 }
 
 #iskopi-logo {
@@ -72,6 +73,7 @@ a {
 }
 
 #iskopi-text-logo {
+    margin-top: 10px;
     width: 110px;
 }
 
@@ -128,7 +130,7 @@ h1 {
     letter-spacing: -0.1em;
     margin: 0px;
 
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 h2 {
@@ -223,16 +225,30 @@ footer {
     gap: 40px;
 
     position: absolute;
-    height: 741px;
+    height: 740px;
     left: 0px;
     right: 0px;
-    top: 3500px;
+    top: 3489px;
 
-    background: #000000;
+    background: var(--black);
 }
 
-footer > .tagline {
-    width: 939px;
+.footer-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 75px;
+}
+
+.footer-head > #iskopi-logo-white {
+    width: 183px;
+    height: 42px;
+}
+
+.footer-head > .tagline {
+    width: 670px;
 
     text-align: center;
     color: white;
@@ -283,4 +299,21 @@ ul.footer-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.footer-foot {
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+}
+
+.copyright {
+    padding: 0px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
