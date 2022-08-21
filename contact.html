@@ -14,12 +14,23 @@
             <div class="back">
                 <a href="#">&larr; Back</a>
             </div>
-            <form>
-                <label for="name">Name</label>
+            <form action="submit" id="contact-form">
+                <div class="label">
+                    <label for="name">Name</label>
+                    <div id="nameError" class="error"></div>
+                </div>
                 <input id="name" type="text" placeholder="Enter Name">
-                <label for="email">Email</label>
+                
+                <div class="label">
+                    <label for="email">Email</label>
+                    <div id="emailError" class="error"></div>
+                </div>
                 <input id="email" type="text" placeholder="Enter Email">
-                <label for="message">Message</label>
+
+                <div class="label">
+                    <label for="message">Message</label>
+                    <div id="messageError" class="error"></div>
+                </div>
                 <textarea id="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
                 <button type="submit">SUBMIT</button>
             </form>
@@ -48,4 +59,5 @@
         </div>
     </main>
 </body>
+<script src="contact.js"></script>
 </html>

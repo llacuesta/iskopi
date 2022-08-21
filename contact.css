@@ -138,9 +138,20 @@ form {
     margin-top: 10px;
 }
 
+.label {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 label {
     color: var(--dark-brown);
-    padding-bottom: 10px;
+}
+
+.error {
+    font-size: 14px;
+    color: red;
 }
 
 input, textarea, button {
