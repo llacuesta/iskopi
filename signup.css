@@ -23,6 +23,7 @@ body {
 
 }
 
+
 img{
     position: absolute;
     z-index: -1;
@@ -69,22 +70,55 @@ img{
 form{
     display: flex;
     flex-direction: column;
-    padding: 30px;
-
-    row-gap: 10px;
+    padding: 20px;
 }
-
-input{
+.input-control{
+    position: relative;
+}
+.input-control input{
     height: 30px;
+    width: 402px;
+
     background: rgba(0, 0, 0, 0.1);
     border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
     border-color: var(--light-brown);
- 
+
+    display: block;
+    
 }
 
+.input-control.success input{
+    border-color: #2ecc71;
+}
+
+.input-control.success .fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+
+}
+
+.input-control.error input{
+    border-color: #e74c3c;
+}
+
+.input-control.error .fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.input-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
 label{
+    display: inline-block;
+    margin-bottom: 5px;
     color: var(--dark-brown);
 }
+
 #back-button{
     width: 100px;
     transition: transform 500ms ease-in-out 25ms;
@@ -108,4 +142,20 @@ label{
 #signup-page-button:hover {
     color: var(--black);
     background-color: rgba(230,230,230,0.5);
+}
+
+.input-control>i{
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    visibility: hidden ;
+
+}
+
+small{
+    visibility: hidden ;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 5px;
 }
