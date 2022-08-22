@@ -25,6 +25,60 @@ body {
     background-size: cover;
 }
 
+/*
+    NAVIGATION
+*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 86px 12px 55px;
+    gap: 8px;
+
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    font-size: 16px;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo--homepage {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+#iskopi-logo {
+    width: 70px;
+}
+
+#iskopi-text-logo {
+    margin-top: 10px;
+    width: 110px;
+}
+
 /* 
     MAIN
 */
@@ -60,12 +114,12 @@ main {
     transform: translateX(-8px);
 }
 
-a {
+.back > a {
     color: var(--black);
     text-decoration: none;
-    
 }
-a:hover {
+
+.back > a:hover {
     color: var(--light-brown);
 }
 
