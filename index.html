@@ -4,9 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <title>Homepage</title>
 </head>
 <body>
-    
+    <!-- navigation -->
+    <nav>
+        <div class="logo--homepage">
+            <img id="iskopi__logo" src="homepage-images/ISKOpi logo.png" alt="">
+            <img id="iskopi__text"src="homepage-images/ISKOpi text.png" alt="">
+        </div>
+        <ul class="nav__button">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!--header-->
+    <header>
+        <div class="header">
+            <h1 class="header__tagline">Kapeng lumalaban para sa Bayan</h1>
+            <div class="button header__button">
+                <button class="header__button header__button--signup">SIGN UP</button>
+                <button class="header__button header__button--ordernow">ORDER NOW</button>
+            </div>
+        </div>
+    </header>
+
+    <!--Product section-->
+    <div class="product__section">
+        <!--Product header-->
+        <div class="product__header">
+            <h1 class="product__title">OUR<span> PRODUCTS</span></h1>
+            <div class="prod__line"></div> <!-- line -->
+            <p class="product__subtitle"> We have carefully selected great tasting coffees from around the world</p>
+        </div>
+        <!--Categories-->
+        <div class="category">
+            <!--Coffee beans-->
+            <div class="product__category product__category--coffeebeans">
+                <div class="product__gradient product gradient--coffeebeans">
+                    <div class="category__text category__text--coffeebeans">
+                        <h3 class="category__title category__title--coffeebeans">Coffee Beans</h3>
+                        <p class="category__subtitle category__subtitle--coffeebeans">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="category__button">
+                            <p>BROWSE CATEGORY &rarr;</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--background carousel-->
+                 <div class="slide-coffeebeans fade">
+                    <img class="coffeebeans-img" src="homepage-images/coffeebeans-1.jpg" alt="">
+                </div>
+                <div class="slide-coffeebeans fade">
+                    <img class="coffeebeans-img" src="homepage-images/coffeebeans-2.jpg" alt="">
+                </div>
+                <div class="slide-coffeebeans fade">
+                    <img class="coffeebeans-img" src="homepage-images/coffeebeans-3.jpg" alt="">
+                </div>
+
+            </div>
+
+             <!--Coffee-->
+            <div class="product__category product__category--coffee">
+                <div class="product__gradient product gradient--coffee">
+                    <div class="category__text category__text--coffee">
+                        <h3 class="category__title category__title--coffee">Coffee</h3>
+                        <p class="category__subtitle category__subtitle--coffee">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="category__button">
+                            <p>BROWSE CATEGORY &rarr;</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!--background carousel coffee-->
+                <div class="slide-coffee fade">
+                    <img class="coffee-img" src="homepage-images/coffee-1.jpg" alt="">
+                </div>
+                <div class="slide-coffee fade">
+                    <img class="coffee-img" src="homepage-images/coffee-2.jpg" alt="">
+                </div>
+                <div class="slide-coffee fade">
+                    <img class="coffee-img" src="homepage-images/coffee-3.jpg" alt="">
+                </div>
+            
+            </div>
+
+             <!--Pastries-->
+            <div class="product__category product__category--pastries">
+                <div class="product__gradient product gradient--pastries">
+                   <div class="category__text category__text--pastries">
+                        <h3 class="category__title category__title--pastries">Pastries</h3>
+                        <p class="category__subtitle category__subtitle--pastries">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="category__button">
+                            <p>BROWSE CATEGORY &rarr;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--background carousel-->
+                <div class="slide-pastries fade">
+                    <img class="pastries-img" src="homepage-images/pastries-1.jpg" alt="">
+                </div>
+                <div class="slide-pastries fade">
+                    <img class="pastries-img" src="homepage-images/pastries-2.jpg" alt="">
+                </div>
+                <div class="slide-pastries fade">
+                    <img class="pastries-img" src="homepage-images/pastries-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- About us section -->
+    <section>
+        <div class="aboutus">
+            <!-- <div id="rectangle"></div> -->
+            <img src="homepage-images/about us.jpg" alt="">
+            <div class="about-content">
+                <h1 class="about-content-title">ABOUT <span>US</span></h1>
+                <div class="aboutus__line"></div>   <!-- line -->
+                <p class="aboutus-text" >If you need to work, we have a seating area created 
+                    specifically for you. If you need to rest, we have 
+                    a soft-seating area in front of a stone fire place that 
+                    is perfect for your weary mind and body. We offer a delicious 
+                    variety of coffee from Safehouse Coffee made by our professionally 
+                    trained baristas. We have everything from classic coffee to our house 
+                    made specialty beverages.</p>
+                <button id="readmore">READ MORE</button>
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer>
+        <div class="footer__header">
+            <img id="footerlogo" src="homepage-images/ISKOpi text white.png" alt="">
+            <p>ISKOpi offers a unique coffee house environment unlike any other
+                in Macon. We are not only a place to drop in and get your morning 
+                cup of coffee , we are a place where you can sit down and enjoy 
+                that tailor-made cup of coffee.</p>
+        </div>
+        <hr>
+        <div class="sections footer__section">
+            <div class="footer__section footer__sections--products">
+                <div class="section__ title section__title--products">OUR PRODUCTS</div>
+                <div class="section__line"></div>
+                <div class="section__content section__content--products">
+                    <p>Coffee beans</p>
+                    <p>Coffee</p>
+                    <p>Pastries</p>
+                </div>
+            </div>
+
+            <div class="footer__section footer__sections--location">
+                <div class="section__ title section__title--location">LOCATIONS</div>
+                <div class="section__line"></div>
+                <div class="section__content section__content--location">
+                    <p>Bagiuo</p>
+                    <p>Cebu</p>
+                    <p>Diliman</p>
+                    <p>Los Baños</p>
+                    <p>Manila</p>
+                    <p>Mindanao</p>
+                    <p>Visayas</p>
+                </div>
+            </div>
+
+            <div class="footer__section footer__section--contact">
+                <div class="section__ title section__title--contact">CONTACT</div>
+                <div class="section__line"></div>
+                <div class="section__content section__content--contact">
+                    <p>Iskopi@gmail.com</p>
+                    <p>+63 123 456 2345</p>
+                    <p>39 Douglas Street
+                        Redfern, NSW 2016 
+                        Philippines</p>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyrightsec">
+            <p>©Copryrights 2022</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
 </body>
+<script src="homepage.js"></script>
 </html>
