@@ -77,7 +77,7 @@
  header{
      margin: 0px;
      height: 670px; /*updated*/
-     background-image: url("homepage-images/coffee header.jpg");
+     background-image: url("/../images/homepage-images/coffee header.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      
