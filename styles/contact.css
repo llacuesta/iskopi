@@ -21,7 +21,7 @@ body {
     margin: 0px;
 
     position: relative;
-    background-image: url(images/bg.png);
+    background-image: url(/../images/bg.png);
     background-size: cover;
 }
 

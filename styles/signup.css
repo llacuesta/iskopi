@@ -57,7 +57,7 @@ img{
 }
 
 .signup-left{
-    background-image: url("signup.jpg");
+    background-image: url("/../images/signup.jpg");
 }
 .signup-right{
     background-color: var(--white-color);
