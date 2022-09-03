@@ -1,0 +1,261 @@
+/*
+    FONTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@0,600;1,100&display=swap');
+
+:root {
+    --white-color: #e6e6e6;
+    --dark-brown: #532e1c;
+    --light-brown: #c5a880;
+    --black: #0f0f0f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Didact Gothic';
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px;
+
+    position: relative;
+    background-image: url(images/bg.png);
+    background-size: cover;
+}
+
+/*
+    NAVIGATION
+*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 86px 12px 55px;
+    gap: 8px;
+
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    font-size: 16px;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo--homepage {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+#iskopi-logo {
+    width: 70px;
+}
+
+#iskopi-text-logo {
+    margin-top: 10px;
+    width: 110px;
+}
+
+/* 
+    MAIN
+*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+    CONTACT US
+*/
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 552px;
+
+    background-color: var(--white-color);
+}
+
+.back {
+    margin: 20px;
+    transition: transform 500ms ease-in-out 25ms;
+}
+
+.back:hover {
+    transform: translateX(-8px);
+}
+
+.back > a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.back > a:hover {
+    color: var(--light-brown);
+}
+
+/*
+    INFORMATION
+*/
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 552px;
+}
+
+.top {
+    height: 185px;
+    padding: 50px;
+
+    background-color: var(--dark-brown);
+}
+
+.bot {
+    height: 185px;
+    padding: 50px;
+
+    background-color: var(--light-brown);
+}
+
+.information h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -0.05em;
+    line-height: 50px;
+    color: var(--white-color);
+
+    margin: 0px;
+}
+
+.headline {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.top h1:last-child {
+    color: var(--light-brown)
+}
+
+.bot h1:first-child {
+    color: var(--dark-brown)
+}
+
+.content > p {
+    color: white;
+    margin: 0px;
+}
+
+.bot p {
+    color: black;
+}
+
+/*
+    FORM
+*/
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.label {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+label {
+    color: var(--dark-brown);
+}
+
+.error {
+    font-size: 14px;
+    color: red;
+}
+
+input, textarea, button {
+    font-family: 'Didact Gothic';
+    font-weight: 400;
+    
+    border-radius: 0px;
+    border: 1px solid var(--light-brown);
+    background-color: #cfcfcf;
+}
+
+input {
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+    margin-bottom: 25px;
+    padding: 10px;
+
+    font-size: 14px;
+}
+
+button {
+    height: 40px;
+
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--black);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-radius: 0px;
+    border: 1px solid var(--black);
+    background-color: #cfcfcf;
+}
+
+button:hover {
+    background-color: var(--white-color);
+    color: var(--black);
+}
+
+button:active {
+    background-color: var(--light-brown);
+    color: var(--black);
+    border-color: var(--black);
+}

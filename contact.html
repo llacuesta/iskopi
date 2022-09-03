@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <title>Contact Us | ISKOpi</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo--homepage">
+            <img id="iskopi-logo" src="/images/iskopi-logo.png" alt="iskopi-logo-white">
+            <img id="iskopi-text-logo" src="/images/iskopi-text-logo-white.png" alt="iskopi-text-logo-white">
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Us -->
+    <main>
+        <div class="contact-us">
+            <div class="back">
+                <a href="#">&larr; Back</a>
+            </div>
+            <form action="submit" id="contact-form">
+                <div class="label">
+                    <label for="name">Name</label>
+                    <div id="nameError" class="error"></div>
+                </div>
+                <input id="name" type="text" placeholder="Enter Name">
+                
+                <div class="label">
+                    <label for="email">Email</label>
+                    <div id="emailError" class="error"></div>
+                </div>
+                <input id="email" type="text" placeholder="Enter Email">
+
+                <div class="label">
+                    <label for="message">Message</label>
+                    <div id="messageError" class="error"></div>
+                </div>
+                <textarea id="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <div class="information">
+            <div class="top">
+                <div class="headline">
+                    <h1>Let's</h1><h1>Talk</h1>
+                </div>
+                <div class="content">
+                    <p>Share your experiences with us!</p><br>
+                    <p>Iskopi@gmail.com</p>
+                    <p>+63 123 456 2345</p>
+                </div>
+            </div>
+            <div class="bot">
+                <div class="headline">
+                    <h1>We're</h1><h1>Here</h1>
+                </div>
+                <div class="content">
+                    <p>Our door is always open for a good cup of coffee.</p><br>
+                    <p>39 Douglas Street Redfern,</p>
+                    <p>NSW 2016, Philippines</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="contact.js"></script>
+</html>
