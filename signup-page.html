@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="signup.jpg" alt="">
+    <div class="container">
+        <div class="signup-left"></div>
+        <div class="signup-right">
+            <div id="back-button">&larr; Back</div>
+            <form class="fill-up" id="form">
+                <div class="input-control">
+                    <label for="name">Userame</label>
+                    <input type="text" id="username" placeholder=" Enter Username">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Input invalid</small>
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder=" Enter Email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Input invalid</small>
+                </div>
+
+                <div class="input-control">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" placeholder=" Enter Password">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Input invalid</small>
+                </div>
+
+                <div class="input-control">
+                    <label for="re-pass">Re-type Password</label>
+                    <input type="password" id="re-pass" placeholder=" Re-type Password">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Input invalid</small>
+                </div>
+                
+                <button type="submit" id="signup-page-button">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>
